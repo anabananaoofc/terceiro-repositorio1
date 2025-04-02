@@ -9,10 +9,36 @@
 }
 
 body{
-font-size: 1 rem;
+font-size: 1rem;
 font-family: 'Merriweather'; 
 
 }
+
+
+section {
+    padding-bottom: 5rem;
+}
+
+.display-4 {
+    text-shadow: -5px 5px var(--cor1);
+}
+
+#ana nails {
+    position:relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    background: var(--cor4);
+    background-size: 180px 180px;
+}
+
+#ana nails .container
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    
+
+
 
 #contato {
     background: var(--cor-principal);
