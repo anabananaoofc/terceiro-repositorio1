@@ -8,93 +8,88 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
-    <header class="p-5">
-        <h2>Cabeçalho</h2>
+    <header class="p-5" >
 
         <nav class="container d-flex justify-content-between align-items-center">
-            <img src="logo.png" alt="Logotipo canva"> <!-- Colocar uma imagem aqui-->
+            <img src="img/logo.png.png" alt="Logotipo da Ana Nails" class="nav-img" loading="lazy" > 
             <ul class="nav mt-5">
                 <li class="nav-item"> <a class="nav-link" href="#inicio"> Início </a> </li>
-                <li class="nav-item"> <a class="nav-link" href="#galeria "> Galeria </a><li>
-                <li class="nav-item"> <a class="nav-link" href="#contato"> Contato </a><li> 
+                <li class="nav-item"> <a class="nav-link" href="#galeria"> Galeria </a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#contato"> Contato </a> </li>
             </ul>
         </nav>
     </header>
     <main class="container my-5">
-        <h2>Corpo da página</h2>
-        <section id="inicio" class="my-5"> 
-        <div>
-            <div>
-                <h2>Boas-vindas</h2>
-                <img src="img/logo.png.png" alt="Logotipo Ana Nails"
-                class="mb-3" width="278" loading="lazy >
-                <a href="#Ana nails" class="btn btn-primary btn-lg botao-inicio fw-semibold" > Quero conhecer! </a>
+        
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h2>Boas-vindas</h2>
+                    <img src="img/logo.png.png" alt="Logotipo da Ana Nails"  class="mb-3" width="563" height="278" loading="lazy" >
+                    <a href="#ananails" class="btn btn-primary btn-lg botao-inicio fw-semibold" > Quero conhecer! </a>
+                </div>
             </div>
-        </div>
         </section>
 
-        <section id="Unhas" class="my-5 pt-6 ">
-       <div class="container d-flex align-items-center">
-        <div class="col-5">
-          <h2>O que é Ana Nails?</h2> 
-          <!--escrever sobre o seu tema-->
-          <p class="p-2">Apresentamos Ana Nails, um ambiente virtual dedicado àqueles que manifestam interesse pela arte e pelo cuidado das unhas. Nossa plataforma foi concebida como um espaço multifuncional, onde é possível tanto encontrar inspirações para o universo da estética ungueal quanto agendar horários para a realização de serviços de manicure e pedicure.</p>
+        <section id="tropicalia" class="my-5 pt-6 secao-Ana nails"> <!-- SEU TEMA do seu Site-->
+            <div class="container d-flex align-items-center" >
+                <div class="col-5" >
+                    <h2>O que foi a Ana Nails?</h2>
+                    <p class="p-2" >Ana Nails é um site que te inspira a cuidar e fazer as unhas</p>
+                </div>
+            </div>
 
-       </div>
         </section>
 
         <section id="galeria">
-       <h2 class="text-center pt-5"> galeria </h2>
-       <div class="container p-3 mt-3 fundo-galeria">
-        <div class="col-md-4">
-        <img src="preview.jpg" alt="imagem unhas em gel roxo"class="img-fluid rounded-5" loading="lazy">
-        </div>
-        <div class="col-md-4">
-            <img src="unhas em gel.png" alt="unhas em gel brancas" class="img-fluid rounded-5" loading="lazy">
+            <h2 class="text-center pt-5"> Galeria </h2>
+            <div class="container p-3 mt-3 fundo-galeria">
+                <div class="col-md-4">
+                    <img src="img/unhas.png" alt="Imagem unhas" class="img-fluid rounded-5" loading="lazy">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/unhas em gel 3.png" alt="imagem unhas em gel" class="img-fluid rounded-5" loading="lazy">
+                </div>
+            </div>
 
-        </div>
-       </div>
         </section>
 
         <section id="contato">
             <div class="container p-5 d-flex justify-content-center" >
-           <!-- caixa do formulário com 60% de largura-->
-           <h2 class="mb-3" >Entre em contato</h2>
-           <form>
-            <div class="form-gorup mb-3">
-                <label for="nome"></label>
-                <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1 placeholder="Digite seu nome" >
-
+                <!-- Caixa do formulário com 60% de largura-->
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <h2 class="mb-3" >Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label  for="nome"> Nome </label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"  placeholder="Digite seu nome completo" >
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email"> Email </label>
+                            <input type="email" name="email" id="email" class="form-control rounded-3 mt-1">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem"> Mensagem </label>
+                            <textarea name="mensagem" id="mensagem" class="form-control rounded-4 mt-2"  rows="4" placeholder="Escreva sua mensagem"  ></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao"  >Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group mb-3">
-            <label for="email"> Email </label>
-            <input type="email" name="email" id="email" class="form-control rounded-3 mt-1>
-
-            </div>
-            <div class="form-gorup mb-3">
-             <label for="mensagem"> Mensagem </label>
-             <textarea name="mensagem" id="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem" ></textarea>
-            
-            </div>
-            <div class="d-grid gap-2">
-                <button type="submit" class="btn btn-primary btn-lg rounded-pi11 tamanho-botao">Enviar mensagem</button>            </div>
-           </form>
-        </div>
-
         </section>
 
     </main>
     <footer class="text-center p-3 fst-italic">
-        <h2>Rodapé</h2>
         <p>Acesse nossas redes:</p>
         <i class="bi bi-whatsapp"></i>
         <i class="bi bi-instagram"></i>
         <i class="bi bi-tiktok"></i>
-        <p>Desenvolvido por Ana Luiza Braga Mesquita. Projeto fictício sem fins comerciais</p>
+        <p class="mt-3">Desenvolvido por Ana Braga Mesquita. Projeto fictício sem fins comerciais</p>
     </footer>
 </body>
 

@@ -1,71 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
-    --cor-principal: #d97ff4;
-    --cor1: #a931c4;
-    --cor2: #8900a5;
-    --cor3: #690086;
-    --cor4: #4a0069;
+:root {
+    --cor-principal: #b764c0;
+    --cor1: #b65d98;
+    --cor2: #c58eea;
+    --cor3: #68baa6;
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --rosa: #e347bf;
 }
 
-body{
-font-size: 1rem;
-font-family: 'Merriweather'; 
-
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat'; /*o nome da sua fonte*/
 }
-
 
 section {
     padding-bottom: 5rem;
 }
 
-.nav-link{
-    color: var(--cor-principal);
+header {
+    background-color: var(--branco);
+}
+
+.nav-link {
+    color: var(--rosa);
     font-weight: 600;
 }
 
-.inicio-fundo{
-    background-image: url(img/unhas\ em\ gel\ 3.png);
+.inicio-fundo {
+    background-image: url(img/preview.jpg);
     background-size: cover;
     background-position: right;
     border-radius: 80px;
-    width:606px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
     margin: 0 auto;
 }
 
-.esquerda-conteudo{
-    display:flex;
+.esquerda-conteudo {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap:1rem;
 }
 
-.botao-inicio{
-    background-color: var(--cor-principal);
-    border-radius:  30px;
-    border: : none;
-    width: 14em
+.botao-inicio {
+    background-color: var(--rosa);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
     height: 3em;
     align-content: center;
 }
+
+
 .display-4 {
-    text-shadow: -5px 5px var(--cor1);
+    text-shadow: -5px 5px var(--rosa);
 }
 
-#ana nails {
-    position:relative;
+#tropicalia {
+    position: relative;
     padding-top: 5rem;
     margin-top: 3rem;
-    background: var(--cor4);
-    background-size: 180px 180px;
+    background: var(--cor2);
+    background-size: 180px 180px; /* Ajuste o tamanho conforme necessário*/
 }
 
-#ana nails .container
-    display:flex;
-    align-items:center;
-    position:relative;
-    z-index:1;
-    
+#tropicalia .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo fica acima das imagens de backgronde se houverem */
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -76,10 +93,10 @@ section {
 }
 
 .formulario{
-    background-color: var(--cor4);
+    background-color: var(--branco);
     padding: 2rem;
-    border-radius: 10 px;
-    box-shadow: 0 0 10 px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     font-weight: bold;
 }
 
