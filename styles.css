@@ -109,3 +109,58 @@ header {
 .form-control {
     background-color: var(--cor2);
 }
+
+
+
+
+
+
+
+
+.opcoes-acessibilidade {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button {
+    margin-bottom: 5px;
+}
+.apresenta-lista {
+    display: none;
+}
+
+.alto-contraste{
+    background-color: var(--preto)
+    color: (var(--branco))
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario {
+    background-color: var(--preto);
+    color: var(--branco)
+}
+
+.alto-contraste .nav-link {
+    color: var(--rosa);
+}
+
+.alto-contraste .botao-inicio 
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary {
+    background-color: var(--rosa);
+    color: var(--preto)
+}
+
+.alto-contraste #ananails {
+    background: none;
+}
+
+.alto-contraste #galeria {
+    background-color: var(--preto);
+}
+
+.alto-contraste .fundo-galeria {
+    background: none;
+}
